@@ -396,7 +396,7 @@ const bollywood_movies_with_hints = [
     ["classof83", "A web series about a police officer training a group of young cadets. [Netflix]"]
 ];
 
-let youtubers_with_hints = [
+const youtubers_with_hints = [
     ["carryminati", "Known for his comedic skits, roasting, and humorous commentary, this YouTuber gained massive popularity with his energetic personality and quirky content."],
     ["ashishchanchlanivines", "This YouTuber creates relatable and hilarious short skits, often focusing on everyday situations in Indian households, which have gained him a massive following."],
     ["amitbhadana", "This YouTuber from Haryana is known for his comedic sketches and relatable, family-friendly humor, focusing on daily life in India."],
