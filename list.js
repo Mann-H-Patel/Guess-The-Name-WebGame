@@ -1,4 +1,4 @@
-const marvelHeroesWithHints = [
+const marvel_Heroes_With_Hints = [
     ["doctorstrange", "Master of the Mystic Arts and the Sorcerer Supreme."],
     ["ironman", "Genius billionaire in an armored suit powered by an arc reactor."],
     ["captainamerica", "Super-soldier with a shield made of vibranium."],
@@ -27,7 +27,7 @@ const marvelHeroesWithHints = [
     ["eternals", "An ancient group of immortal beings with various powers."]
 ];
 
-const bollywoodHeroesWithHints = [
+const bollywood_Heroes_With_Hints = [
     ["shahrukhkhan", "Known as the King of Bollywood, famous for 'Dilwale Dulhania Le Jayenge'."],
     ["salmankhan", "Star of 'Bajrangi Bhaijaan' and 'Sultan'."],
     ["aamirkhan", "Actor in 'Dangal' and '3 Idiots', known for perfection."],
@@ -63,7 +63,7 @@ const bollywoodHeroesWithHints = [
     ["amitabh", "Another name for Amitabh Bachchan, renowned for his roles in 'Sholay' and 'Paa'."]
 ];
 
-const cricketerswithhints = [
+const cricketers_with_hints = [
     ["sachintendulkar", "Often referred to as the deity of cricket, this Indian legend set unparalleled records in both Test and ODI formats, particularly famous for his longevity and monumental career runs."],
     ["viratkohli", "This Indian batsman has shattered numerous records, including the most double centuries in Tests, and is renowned for his aggressive style and leadership in the shorter formats."],
     ["msdhoni", "A wicketkeeper-batsman with an iconic calm demeanor, he led India to two major global titles and is celebrated for his cool decision-making under pressure."],
@@ -185,7 +185,7 @@ const cricketerswithhints = [
     ["kapildev", "A former Indian all-rounder known for leading India to its first World Cup win and his revolutionary impact on Indian cricket."],
 ];
 
-const indiancitieswithhints = [
+const indian_cities_with_hints = [
     ["mumbai", "Financial Capital Of India"],
     ["delhi", "Capital Of India"],
     ["bengaluru", "Silicon Valley Of India"],
@@ -247,7 +247,7 @@ const indiancitieswithhints = [
     ["gangtok", "Buddhist Pilgrimage, Rumtek Monastery"]
 ];
 
-const indianhistoricalplaceswithhints = [
+const indian_historical_places_with_hints = [
     ["tajmahal", "Agra - Built By Shah Jahan In Memory Of Mumtaz"],
     ["redfort", "Delhi - Mughal Residence And Military Headquarters"],
     ["qutubminar", "Delhi - Tallest Brick Minaret In The World"],
@@ -302,7 +302,7 @@ const indianhistoricalplaceswithhints = [
     ["kalapathar", "Andaman - Known For Its Scenic Beauty And Historical Importance"]
 ];
 
-const indiancuisineswithhints = [
+const indian_cuisines_with_hints = [
     ["biryani", "A RICE DISH WITH SPICES, ORIGINATING FROM HYDERABAD"],
     ["samosa", "FRIED PASTRY FILLED WITH SPICED POTATOES"],
     ["dosa", "A TYPE OF THIN CREPE FROM SOUTH INDIA"],
@@ -336,7 +336,7 @@ const indiancuisineswithhints = [
     ["khoya", "MILK SOLIDS USED IN SWEETS AND DESSERTS"]
 ];
 
-const bollywoodmovieswithhints = [
+const bollywood_movies_with_hints = [
     ["sholay", "An action-packed tale of two criminals hired to fight a notorious bandit."],
     ["dangal", "A story of a father training his daughters to become world-class wrestlers."],
     ["mughaleazam", "An epic love story set against the backdrop of the Mughal empire."],
@@ -396,7 +396,7 @@ const bollywoodmovieswithhints = [
     ["classof83", "A web series about a police officer training a group of young cadets. [Netflix]"]
 ];
 
-let youtuberswithhints = [
+let youtubers_with_hints = [
     ["carryminati", "Known for his comedic skits, roasting, and humorous commentary, this YouTuber gained massive popularity with his energetic personality and quirky content."],
     ["ashishchanchlanivines", "This YouTuber creates relatable and hilarious short skits, often focusing on everyday situations in Indian households, which have gained him a massive following."],
     ["amitbhadana", "This YouTuber from Haryana is known for his comedic sketches and relatable, family-friendly humor, focusing on daily life in India."],
