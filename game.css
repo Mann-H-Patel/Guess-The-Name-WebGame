@@ -1,0 +1,66 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#main-body{
+    background-color: #444;
+    min-height: 100vh;
+    min-width: 100vw;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#container-main{
+    height: 600px;
+    width: 600px;
+    border-radius: 8px;
+    background-color: #222;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    font-family: cursive;
+    color: #ccc;
+    text-align: center;
+}
+
+.input-box input{
+    height: 3rem;
+    width: 8rem;
+    border-radius: 8px;
+    border: none;
+    text-align: center;
+}
+
+.button-new-game button {
+    height: 3rem;
+    width: 10rem;
+    border-radius: 8px;
+    border: none;
+    background-color: #28a745; /* A bright, clickable green */
+    color: white;
+    font-family: cursive;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.button-new-game button:hover {
+    background-color: #218838; /* Darker green on hover */
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px); /* Slight upward movement on hover */
+}
+
+.button-new-game button:active {
+    background-color: #1e7e34; /* Even darker green when pressed */
+    transform: translateY(1px); /* Slight downward movement when clicked */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Reset shadow when pressed */
+}
+

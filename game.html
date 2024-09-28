@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Game</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <main id="main-body">
+        <div id="container-main">
+            <div class="name-of-game">
+                <h1>Guess Who's That</h1>
+            </div>
+
+            <div class="hint" id="hint-text">
+                <h2></h2>
+            </div>
+
+            <div class="check-answer" id="Answer">
+                <h2></h2>
+            </div>
+
+            <div id="lives">
+                <h2></h2>
+            </div>
+
+            <div class="input-box" id="guess-input">
+                <input placeholder="Guess The Name" type="text" onkeyup="handleGuess(event)">
+            </div>            
+
+            <div class="button-new-game">
+                <button id="check-guess-btn">Check Guess</button>
+            </div>            
+
+            <div class="button-new-game" onclick="newGame()">
+                <button>New Game</button>
+            </div>
+        </div>
+    </main>
+    <script src="list.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>

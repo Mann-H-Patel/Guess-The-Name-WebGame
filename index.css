@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.head{
+    height: 80px;
+    width: 100%;
+    background-color: #e0f7fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid red; */
+}
+
+.game-name{
+    font-family: "Fredoka", sans-serif;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.game-name h1{
+    color: #333;
+}
+
+.game-name h4{
+    color: #666;
+}
+
+@media only screen and (max-width: 370px) {
+    .game-name h1{
+        font-size: 14px;
+    }
+    .game-name h4{
+        font-size: 8px;
+    }
+    .card{
+        overflow: scroll;
+    }
+  }
+
+/* Css For Card */
+
+main{
+    background-color: #1f1f1f;
+    min-height: 100vh;
+    height: 100%;
+}
+
+/* Styling the card container */
+.card-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping of cards */
+    justify-content: center;
+    gap: 1rem; /* Gap between cards */
+    padding: 40px;
+}
+
+/* Styling the card */
+.card {
+    flex: 1 1 calc(25% - 1rem); /* Each card takes up 25% of the container width minus the gap */
+    height: 200px;
+    max-width: 300px; /* Optional max width to avoid stretching too much */
+    padding: 20px;
+    background-color: #fff;
+    border: 4px solid #777;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    font-family: 'Fredoka', sans-serif;
+}
+
+/* Media query for smaller devices (mobile phones) */
+@media (max-width: 1380px) {
+    .card {
+        flex: 1 1 100%; /* Each card takes full width on mobile */
+    }
+}
+
+/* Hover effect */
+.card:hover {
+    transform: translateY(-10px); /* Lifts the card up */
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2); /* Enhances the shadow */
+}
+
+/* Heading inside the card */
+.card h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Paragraph inside the card */
+.card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.card i{
+    font-size: 40px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 80%;
+    max-width: 500px;
+}
+.modal-header {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+.modal-footer {
+    margin-top: 20px;
+}
+.modal-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
