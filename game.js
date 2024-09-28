@@ -1,5 +1,5 @@
 const selectedCategoryIndex = localStorage.getItem('selectedCategory');
-
+console.log(selectedCategoryIndex)
 let randomHeroTuple;
 
 // Choose the correct list based on the selected category
