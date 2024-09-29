@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: "Fredoka", sans-serif;
 }
 
 #main-body{
@@ -44,7 +45,7 @@
     border: none;
     background-color: #28a745; /* A bright, clickable green */
     color: white;
-    font-family: cursive;
+    font-family: "Fredoka", sans-serif;
     font-size: 1.2rem;
     font-weight: bold;
     cursor: pointer;
