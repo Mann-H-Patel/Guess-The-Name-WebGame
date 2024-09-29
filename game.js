@@ -511,7 +511,7 @@ function updateDisplay() {
         if (correctLetters.includes(letter)) {
             displayLetter += letter; // Display correct letters
         } else {
-            displayLetter += "_"; // Display underscores for missing letters
+            displayLetter += "_ "; // Display underscores for missing letters
         }
     }
     
@@ -531,6 +531,14 @@ function handleGuess(event){
         const guessInput = document.getElementById("guess-input").querySelector("input"); // Access the input element directly
         const guess = guessInput.value.toLowerCase(); // Convert to lowercase
         guessInput.value = "";  // Clear input
+
+        if(guess == randomHero){
+            // If no underscores are left, the user has won
+            if (confirm(`Congratulations! You've guessed the word! Click OK to return to the home page.`)) {
+                window.location.href = "index.html"; // Redirect to index.html
+            }
+            gameStatus = true; // Set the game status to true
+        }
 
         if (correctLetters.includes(guess)) {
             alert(`You guessed that letter ("${guess}") already.`);
@@ -581,6 +589,14 @@ function handleButtonClick() {
 
 
     if (guess.length === 0) return; // Exit if input is empty
+
+    if(guess == randomHero){
+        // If no underscores are left, the user has won
+        if (confirm(`Congratulations! You've guessed the word! Click OK to return to the home page.`)) {
+            window.location.href = "index.html"; // Redirect to index.html
+        }
+        gameStatus = true; // Set the game status to true
+    }
 
     if (correctLetters.includes(guess)) {
         alert(`You guessed that letter ("${guess}") already.`);
