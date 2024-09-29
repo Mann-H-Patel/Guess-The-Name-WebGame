@@ -13,7 +13,7 @@
     <title>Guess A Word Game</title>
 </head>
 
-<body onload="showDisclaimerModal()">
+<body>
 
     <div id="disclaimerModal" class="modal">
         <div class="modal-content">
@@ -73,10 +73,21 @@
     </main>
 
     <script>
-        function showDisclaimerModal() {
-            document.getElementById('disclaimerModal').style.display = 'flex';
+        // Function to show the disclaimer modal if it hasn't been shown yet
+        function showDisclaimerModalOnce() {
+            // Check if the disclaimer has already been shown (stored in localStorage)
+            const disclaimerShown = localStorage.getItem('disclaimerShown');
+
+            // If it hasn't been shown, display the modal
+            if (!disclaimerShown) {
+                document.getElementById('disclaimerModal').style.display = 'flex';
+
+                // Set a flag in localStorage so the disclaimer won't be shown again
+                localStorage.setItem('disclaimerShown', 'true');
+            }
         }
 
+        // Function to close the disclaimer modal
         function closeDisclaimerModal() {
             document.getElementById('disclaimerModal').style.display = 'none';
         }
@@ -88,6 +99,10 @@
             // Redirect to the game page
             window.location.href = "game.html";
         }
+
+        // Call showDisclaimerModalOnce when the page loads
+        window.onload = showDisclaimerModalOnce;
+
     </script>
 </body>
 
