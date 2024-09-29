@@ -73,23 +73,15 @@
     </main>
 
     <script>
-        // Function to show the disclaimer modal if it hasn't been shown yet
-        function showDisclaimerModalOnce() {
-            // Check if the disclaimer has already been shown (stored in localStorage)
-            const disclaimerShown = localStorage.getItem('disclaimerShown');
-
-            // If it hasn't been shown, display the modal
-            if (!disclaimerShown) {
-                document.getElementById('disclaimerModal').style.display = 'flex';
-
-                // Set a flag in localStorage so the disclaimer won't be shown again
-                localStorage.setItem('disclaimerShown', 'true');
-            }
+        function showDisclaimerModal() {
+            document.getElementById('disclaimerModal').style.display = 'flex';
         }
 
         // Function to close the disclaimer modal
         function closeDisclaimerModal() {
             document.getElementById('disclaimerModal').style.display = 'none';
+            // Set the disclaimerShown flag to true in sessionStorage so it won't show again in the same session
+            sessionStorage.setItem('disclaimerShown', 'true');
         }
 
         // Function to store category selection and navigate to the game page
@@ -100,8 +92,19 @@
             window.location.href = "game.html";
         }
 
-        // Call showDisclaimerModalOnce when the page loads
-        window.onload = showDisclaimerModalOnce;
+        // Function to check disclaimer status and show it only if not shown during this session
+        function checkDisclaimerStatus() {
+            // Check if disclaimerShown flag exists in sessionStorage
+            const disclaimerShown = sessionStorage.getItem('disclaimerShown');
+
+            // If it's not set or is 'false', show the disclaimer modal
+            if (!disclaimerShown) {
+                showDisclaimerModal();
+            }
+        }
+
+        // Call checkDisclaimerStatus when the page loads
+        window.onload = checkDisclaimerStatus;
 
     </script>
 </body>
